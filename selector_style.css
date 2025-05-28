@@ -1,0 +1,24 @@
+*{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid red;
+}
+
+h1{
+    color:aqua;
+}
+h2{
+    color:blueviolet;
+}
+p{
+    color:brown;
+}
+.main{
+    color:burlywood;
+}
+#bcs{
+    color:palevioletred;
+}
+h1[draggable="true"]{
+    color:brown;
+}
