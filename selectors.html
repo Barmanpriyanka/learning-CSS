@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Accessing Elements in the DOM</title>
+   <style>
+      html { font-family: sans-serif; color: #333; }
+      body { max-width: 500px; margin: 0 auto; padding: 0 15px; }
+      div, article { padding: 10px; margin: 5px; border: 1px solid #dedede; }
+   </style>
+</head>
+<body>
+
+   <!-- Change h1 inner text to "🌐 DOM Manipulation Practice" and text color to blue -->
+   <h1 id="demo">Accessing Elements in the DOM</h1>
+
+   <!-- Use getElementById to:
+        1. Change innerText to "🎯 I was accessed using getElementById!"
+        2. Set background color to #e3f2fd -->
+   <h2>ID (#demo)</h2>
+   <div id="demo2">Access me by ID</div>
+
+   <!-- Use getElementsByClassName to:
+        1. Change text to "✅ Accessed using getElementsByClassName() 1/2"
+        2. Set text color to green -->
+   <h2 class="demo3">Class (.demo)</h2>
+   <div class="demo">Access me by class (1)</div>
+   <div class="demo">Access me by class (2)</div>
+
+   <!-- Use getElementsByTagName to:
+        1. Change text to "📄 Article 1/2 modified via getElementsByTagName()"
+        2. Set border color to orange -->
+   <h2>Tag (article)</h2>
+   <article>Access me by tag (1)</article>
+   <article>Access me by tag (2)</article>
+
+   <!-- Use querySelector to:
+        1. Change innerText to "🔍 Modified using querySelector()"
+        2. Make font bold
+        3. Set background color to #ffe0b2 -->
+   <h2>Query Selector</h2>
+   <div id="demo-query">Access me by query</div>
+
+   <!-- Use querySelectorAll to:
+        1. Change innerText to "🔁 querySelectorAll() item 1/2"
+        2. Set background color to #fce4ec -->
+   <h2>Query Selector All</h2>
+   <div class="demo-query-all">Access me by query all (1)</div>
+   <div class="demo-query-all">Access me by query all (2)</div>
+
+   <!-- Load your JS file -->
+  <!-- <script src="selector.js"></script>-->
+<script>
+     let p=document.getElementById("demo");
+     p.innerHTML="DOM Manipulation Practice";
+     p.style.color="blue";
+
+      let p2=document.getElementById("demo2");
+     p2.innerHTML="🎯 I was accessed using getElementById!";
+     p2.style.backgroundColor=" #e3f2fd ";
+
+     let p3=document.getElementsByClassName("demo3");
+     p.innerHTML="✅ Accessed using getElementsByClassName() 1/2";
+     p.style.color="blue";
+
+      
+
+</script>
+</body>
+</html>
